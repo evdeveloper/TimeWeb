@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="color-theme" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-form">
+    <div class="wrappers">
+      <form class="forms">
+        <div class="forms__item">
+          <label>Имя</label>
+          <div class="forms__input">
+            <input type="text" name="name">
+          </div>
+        </div>
+        <div class="forms__item">
+          <label>Высота блока</label>
+          <div class="forms__input input-select">
+            <input type="number" name="height">
+          </div>
+          <div class="forms__item-sel">
+            <select class="selectizing">
+              <option value="vh" selected>vh</option>
+              <option value="px">px</option>
+              <option value="%">%</option>
+            </select>
+          </div>
+        </div>
+        <div class="forms__inner">
+          <div class="forms__item width-50">
+            <label>Отступ сверху</label>
+            <div class="forms__input input-select">
+              <input type="number" name="height">
+            </div>
+            <div class="forms__item-sel">
+              <select class="selectizing">
+                <option value="vh" selected>vh</option>
+                <option value="px">px</option>
+                <option value="%">%</option>
+              </select>
+            </div>
+          </div>
+          <div class="forms__item width-50">
+            <label>Отступ снизу</label>
+            <div class="forms__input input-select">
+              <input type="number" name="height">
+            </div>
+            <div class="forms__item-sel">
+              <select class="selectizing">
+                <option value="vh" selected>vh</option>
+                <option value="px">px</option>
+                <option value="%">%</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="forms__item">
+          <label>Фон шапки</label>
+          <div class="forms__input">
+            <input type="text" name="bg">
+          </div>
+          <div class="forms__item-slider">
+            <div class="range" id="range"></div>
+            <div class="range__value" id="range__value"></div>
+          </div>
+        </div>
+        <div class="forms__radio">
+          <div class="forms__radio-title">Размер</div>
+          <div class="forms__radio-list">
+            <div class="forms__radio-item">
+              <input type="radio" id="xs" checked name="size">
+              <label for="xs">XS</label>
+            </div>
+            <div class="forms__radio-item">
+              <input type="radio" id="s" name="size">
+              <label for="s">S</label>
+            </div>
+            <div class="forms__radio-item">
+              <input type="radio" id="m" name="size">
+              <label for="m">M</label>
+            </div>
+            <div class="forms__radio-item">
+              <input type="radio" id="l" name="size">
+              <label for="l">L</label>
+            </div>
+          </div>
+        </div>
+        <div class="forms__item">
+          <label>Размер</label>
+          <div class="forms__input settings">
+            <input type="text" required name="txt">
+            <div class="forms__input-settings">
+              <svg class="svg-sprite-icon  icon-settings set">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#settings"></use>
+              </svg>
+              <svg class="svg-sprite-icon  icon-delete del">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#delete"></use>
+              </svg>
+            </div>
+          </div>
+          <button type="button">Добавить</button>
+        </div>
+        <div class="forms__select">
+          <select class="selectizing">
+            <option value="file" selected>Файл</option>
+            <option value="news">Новость</option>
+            <option value="link">Ссылка</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/select.js"></script>
+    <script src="static/js/wnumb.js"></script>
+    <script src="static/js/nouslider.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
